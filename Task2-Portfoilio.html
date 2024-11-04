@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythili M | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Roboto', sans-serif; color: #333; line-height: 1.6; background-color: #f4f4f4; }
+        nav { background: #022d70; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        nav ul { display: flex; justify-content: center; list-style-type: none; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        nav ul li a:hover { color: #31d3d8ae; }
+        header { display: flex; align-items: center; justify-content: center; padding: 40px; background: #dcd407; text-align: center; gap: 20px; }
+        header img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #270362; }
+        header h1 { font-size: 2.5em; color: #090909; }
+        header p { font-size: 1.2em; color: #040404; margin-top: 5px; }
+        section { padding: 50px; max-width: 900px; margin: 0 auto; }
+        section:nth-child(even) { background: #f9f9f9; }
+        section h2 { font-size: 2em; margin-bottom: 20px; color: #333; text-align: center; }
+        .skills-container { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        #skillsChart { width: 80%; max-width: 400px; margin-top: 20px; }
+        .project { margin-bottom: 20px; background: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 5px; transition: transform 0.3s ease; }
+        .project:hover { transform: scale(1.02); }
+        #resume ul { list-style-type: none; padding-left: 15px; }
+        #resume ul li { margin-bottom: 10px; font-size: 1.1em; }
+        #contact p { font-size: 1.1em; margin-bottom: 10px; }
+        .btn { display: inline-block; background:#12048e; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: background 0.3s ease; }
+        .btn:hover { background: #10100f;color:#f4f4f4; }
+        footer { text-align: center; padding: 20px; background: #12048e; color: white; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <img src="a.jpg" alt="Mythili's Photo">
+        <div>
+            <h1>Mythili M</h1>
+            <p>Full Stack Developer | 2nd Year B.Tech IT Student</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am currently pursuing my B.Tech in Information Technology at Kongu Engineering College, with a CGPA of 9.1. My interests include full-stack development, software engineering, and AI applications.</p>
+        <p><strong>Career Objective:</strong> To contribute my skills in a dynamic environment while growing my own technical expertise.</p>
+        <p><strong>Education:</strong> Completed HSC from Vivekananda Vidyalaya with 556 marks.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <h3>Frontend: HTML, CSS, Bootstrap, JavaScript, Database Connectivity</h3>
+            <canvas id="skillsChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AI in Hospital</h3>
+            <p>An AI-powered portal for doctor appointments and allocation.</p>
+        </div>
+        <div class="project">
+            <h3>Audio Recorder and Player</h3>
+            <p>A Python-based application for recording and playing audio.</p>
+        </div>
+        <div class="project">
+            <h3>Plagiarism Detector</h3>
+            <p>Built using Java AWT to detect and highlight duplicate content.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      
+      <h2>Resume</h2>
+        <h3>Additional Achievements</h3>
+
+        <ul>
+            <li><strong>Papers Presented:</strong> 1) Coimbatore Institute of Technology (1st Prize), 2) Sri Ramakrishna College of Technology, Hindustan Institute of Technology, and Kongu Engineering College.</li>
+            <li><strong>Project Presentation:</strong> Srikrishna College of Engineering and Technology (2nd Prize)</li>
+            <li><strong>Awards:</strong> Best Student Award for 2023-2024 in IT Department, Merit Certificate for Academic Year 2023-24</li>
+            <li><strong>Hobbies:</strong> Chess</li>
+            <li><strong>Languages Known:</strong> Tamil, English, Hindi</li>
+            <li><strong>Industrial Visit:</strong> Radio Astronomy Centre, Ooty</li>
+            <li><strong>Implant Training:</strong> Full Stack Development, Brainery Spot Technology (10 days)</li>
+            <li><strong>Internship:</strong> Interpe (1 month)</li>
+            <li><strong>Additional Certifications:</strong> Honors & Diploma in Computer Applications, Python Basics - Infosys Springboard, AWS for Beginners - Great Learning, MATLAB, MERN Stack - Simplilearn</li>
+        </ul>
+        <section id="resume">
+          <p><a href="Mythili M _ Portfolio.pdf" download class="btn">Download My Resume (PDF)</a></p>
+      </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:m.mythili23manivel@gmail.com">m.mythili23manivel@gmail.com</a></p>
+        <p>Phone: 9025930150</p>
+        <p>Address: Kangeyam, Tirupur</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mythili M. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Chart.js for Skills Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['C', 'C++', 'Python', 'Java'],
+                datasets: [{
+                    label: 'Skill Level (%)',
+                    data: [70, 50, 50, 60],
+                    backgroundColor: ['#4bc0c0', '#9966ff', '#ffce56', '#36a2eb']
+                }]
+            },
+            options: {
+                scales: { y: { beginAtZero: true, max: 100 } }
+            }
+        });
+    </script>
+</body>
+</html>
